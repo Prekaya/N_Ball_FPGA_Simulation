@@ -1,0 +1,16 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Block Memory Generator module top_level_tb.my_top_level.mybram1.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module top_level_tb.my_top_level.mybram2.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Error: DRC Error : Reset is unsuccessful.  RST must be held high for at least five RDCLK clock cycles, and RDEN must be low before RST becomes active high, and RDEN remains low during this reset cycle.
+Time: 4696638 ps  Iteration: 4  Process: /top_level_tb/my_top_level/myf/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gonep/inst_prim/gf18e1_inst/sngfifo18e1/FIFO18E1_inst/s_7/prcs_2clkrst  File: C:\Xilinx\Vivado\2019.2\data/vhdl/src/unisims/primitive/FIFO18E1.vhd
+Error: DRC Error : Reset is unsuccessful.  RST must be held high for at least five WRCLK clock cycles, and WREN must be low before RST becomes active high, and WREN remains low during this reset cycle.
+Time: 4696638 ps  Iteration: 4  Process: /top_level_tb/my_top_level/myf/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gonep/inst_prim/gf18e1_inst/sngfifo18e1/FIFO18E1_inst/s_7/prcs_2clkrst  File: C:\Xilinx\Vivado\2019.2\data/vhdl/src/unisims/primitive/FIFO18E1.vhd
+Error: DRC Error : Reset is unsuccessful at time %t.  RDEN must be low for at least two RDCLK clock cycles after RST deasserted.
+Time: 4725 ns  Iteration: 4  Process: /top_level_tb/my_top_level/myf/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gonep/inst_prim/gf18e1_inst/sngfifo18e1/FIFO18E1_inst/s_7/prcs_rst_rden_after_rst  File: C:\Xilinx\Vivado\2019.2\data/vhdl/src/unisims/primitive/FIFO18E1.vhd
+Error: DRC Error : Reset is unsuccessful at time %t.  WREN must be low for at least two WRCLK clock cycles after RST deasserted.
+Time: 4742692 ps  Iteration: 4  Process: /top_level_tb/my_top_level/myf/inst/gntve_bi_beh_sim.inst_fifo_gen_ntve/gconvfifo/rf/gbi/bi/v7_bi_fifo/fblk/\gextw(1)\/gnll_fifo/inst_extd/gonep/inst_prim/gf18e1_inst/sngfifo18e1/FIFO18E1_inst/s_7/prcs_rst_rden_after_rst  File: C:\Xilinx\Vivado\2019.2\data/vhdl/src/unisims/primitive/FIFO18E1.vhd

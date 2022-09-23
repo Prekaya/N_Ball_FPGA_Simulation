@@ -1,0 +1,13 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sim_1/new/top_level_tb.sv,1639193859,systemVerilog,,,,top_level_tb,,,../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65,,,,,
+C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/clk_wiz_65/clk_wiz_65.v,1638936065,verilog,,C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/frame_blk_mem/sim/frame_blk_mem.v,,clk_wiz_65,,,../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65,,,,,
+C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/clk_wiz_65/clk_wiz_65_clk_wiz.v,1638936065,verilog,,C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/clk_wiz_65/clk_wiz_65.v,,clk_wiz_65_clk_wiz,,,../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65,,,,,
+C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v,1639122258,verilog,,C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/clk_wiz_65/clk_wiz_65_clk_wiz.v,,fifo_generator_0,,,../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65,,,,,
+C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/frame_blk_mem/sim/frame_blk_mem.v,1639122948,verilog,,,,frame_blk_mem,,,../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65,,,,,
+C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/debouncer.sv,1638936308,systemVerilog,,C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv,,debouncer,,,../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65,,,,,
+C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv,1639193807,systemVerilog,,C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/xvga.sv,,top_level,,,../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65,,,,,
+C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/xvga.sv,1638936280,systemVerilog,,C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sim_1/new/top_level_tb.sv,,xvga,,,../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65,,,,,

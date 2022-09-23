@@ -1,0 +1,795 @@
+
+*** Running vivado
+    with args -log top_level.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top_level.tcl -notrace
+Command: synth_design -top top_level -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7100 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 823.504 ; gain = 234.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_level' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:24]
+	Parameter white bound to: 12'b111111111111 
+	Parameter disp_w bound to: 20'sb00000000010000000000 
+	Parameter disp_h bound to: 20'sb00000000001100000000 
+	Parameter nth_ball bound to: 20'sb00000000000001100011 
+	Parameter frac_bits bound to: 5 - type: integer 
+	Parameter radius bound to: 20'sb00000000000000000110 
+	Parameter radius2 bound to: 20'sb00000000000000100100 
+	Parameter diameter2 bound to: 147456 - type: integer 
+	Parameter no_pix bound to: 144 - type: integer 
+	Parameter div_mod bound to: 12 - type: integer 
+	Parameter spring_c bound to: 20'sb00000000000000001001 
+	Parameter w_bits bound to: 19 - type: integer 
+	Parameter n_bits bound to: 24 - type: integer 
+	Parameter g_d bound to: 20'sb00000000000000001000 
+	Parameter friction bound to: 20'sb00000000000000000010 
+	Parameter left_wall bound to: 192 - type: integer 
+	Parameter right_wall bound to: 32576 - type: integer 
+	Parameter bot_wall bound to: 24384 - type: integer 
+	Parameter top_wall bound to: 192 - type: integer 
+	Parameter zero bound to: 20'sb00000000000000000000 
+	Parameter resting bound to: 5'b00000 
+	Parameter initializex bound to: 5'b00001 
+	Parameter initializey bound to: 5'b00010 
+	Parameter initializecol bound to: 5'b00011 
+	Parameter calc_col_disp bound to: 5'b00100 
+	Parameter calc_col_visp bound to: 5'b00101 
+	Parameter calc_col_mag_big bound to: 5'b00110 
+	Parameter calc_col_mag bound to: 5'b00111 
+	Parameter calc_col_dot_big bound to: 5'b01000 
+	Parameter calc_col_dot bound to: 5'b01001 
+	Parameter calc_interact bound to: 5'b01010 
+	Parameter calc_dots_uni bound to: 5'b01011 
+	Parameter done_divide bound to: 5'b01100 
+	Parameter calc_inc_colx bound to: 5'b01101 
+	Parameter calc_inc_coly bound to: 5'b01110 
+	Parameter calc_col_fx bound to: 5'b01111 
+	Parameter calc_col_fy bound to: 5'b10000 
+	Parameter calc_friction bound to: 5'b11011 
+	Parameter next_ball bound to: 5'b10001 
+	Parameter calc_wall_colx bound to: 5'b10010 
+	Parameter calc_wall_coly bound to: 5'b10011 
+	Parameter calc_wall_fx bound to: 5'b10100 
+	Parameter calc_wall_fy bound to: 5'b10101 
+	Parameter move_balls bound to: 5'b10110 
+	Parameter clear_bram bound to: 5'b10111 
+	Parameter hvcountt bound to: 5'b11010 
+	Parameter point_bram bound to: 5'b11000 
+	Parameter change_brams bound to: 5'b11001 
+	Parameter bram1 bound to: 1'b0 
+	Parameter bram2 bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'frame_blk_mem' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.runs/synth_1/.Xil/Vivado-10892-DESKTOP-VLN3J7K/realtime/frame_blk_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frame_blk_mem' (1#1) [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.runs/synth_1/.Xil/Vivado-10892-DESKTOP-VLN3J7K/realtime/frame_blk_mem_stub.v:6]
+WARNING: [Synth 8-689] width (49) of port connection 'addra' does not match port width (20) of module 'frame_blk_mem' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:129]
+WARNING: [Synth 8-689] width (49) of port connection 'addrb' does not match port width (20) of module 'frame_blk_mem' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:130]
+WARNING: [Synth 8-689] width (49) of port connection 'addra' does not match port width (20) of module 'frame_blk_mem' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:132]
+WARNING: [Synth 8-689] width (49) of port connection 'addrb' does not match port width (20) of module 'frame_blk_mem' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:133]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_65' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.runs/synth_1/.Xil/Vivado-10892-DESKTOP-VLN3J7K/realtime/clk_wiz_65_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_65' (2#1) [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.runs/synth_1/.Xil/Vivado-10892-DESKTOP-VLN3J7K/realtime/clk_wiz_65_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'xvga' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/xvga.sv:23]
+	Parameter DISPLAY_WIDTH bound to: 1024 - type: integer 
+	Parameter DISPLAY_HEIGHT bound to: 768 - type: integer 
+	Parameter H_FP bound to: 24 - type: integer 
+	Parameter H_SYNC_PULSE bound to: 136 - type: integer 
+	Parameter H_BP bound to: 160 - type: integer 
+	Parameter V_FP bound to: 3 - type: integer 
+	Parameter V_SYNC_PULSE bound to: 6 - type: integer 
+	Parameter V_BP bound to: 29 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xvga' (3#1) [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/xvga.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/debouncer.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (4#1) [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/debouncer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.runs/synth_1/.Xil/Vivado-10892-DESKTOP-VLN3J7K/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (5#1) [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.runs/synth_1/.Xil/Vivado-10892-DESKTOP-VLN3J7K/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-226] default block is never used [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:423]
+WARNING: [Synth 8-6014] Unused sequential element dot_reg was removed.  [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:261]
+INFO: [Synth 8-6155] done synthesizing module 'top_level' (6#1) [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 899.168 ; gain = 310.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 899.168 ; gain = 310.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 899.168 ; gain = 310.035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 899.168 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/clk_wiz_65/clk_wiz_65/clk_wiz_65_in_context.xdc] for cell 'clkdivider'
+Finished Parsing XDC File [c:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/clk_wiz_65/clk_wiz_65/clk_wiz_65_in_context.xdc] for cell 'clkdivider'
+Parsing XDC File [c:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'myf'
+Finished Parsing XDC File [c:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'myf'
+Parsing XDC File [c:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/frame_blk_mem/frame_blk_mem/frame_blk_mem_in_context.xdc] for cell 'mybram1'
+Finished Parsing XDC File [c:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/frame_blk_mem/frame_blk_mem/frame_blk_mem_in_context.xdc] for cell 'mybram1'
+Parsing XDC File [c:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/frame_blk_mem/frame_blk_mem/frame_blk_mem_in_context.xdc] for cell 'mybram2'
+Finished Parsing XDC File [c:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/frame_blk_mem/frame_blk_mem/frame_blk_mem_in_context.xdc] for cell 'mybram2'
+Parsing XDC File [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/constrs_1/imports/Desktop/nexys4_ddr.xdc]
+Finished Parsing XDC File [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/constrs_1/imports/Desktop/nexys4_ddr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/constrs_1/imports/Desktop/nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1026.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1026.074 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mybram1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mybram2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1028.273 ; gain = 439.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1028.273 ; gain = 439.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100mhz. (constraint file  c:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/clk_wiz_65/clk_wiz_65/clk_wiz_65_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100mhz. (constraint file  c:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/ip/clk_wiz_65/clk_wiz_65/clk_wiz_65_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for clkdivider. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for myf. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mybram1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mybram2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1028.273 ; gain = 439.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:292]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:240]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:286]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:240]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:234]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:234]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:275]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1028.273 ; gain = 439.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 5     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 3     
+	   3 Input     25 Bit       Adders := 4     
+	   7 Input     25 Bit       Adders := 1     
+	   6 Input     25 Bit       Adders := 2     
+	   5 Input     25 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               49 Bit    Registers := 8     
+	               48 Bit    Registers := 1     
+	               25 Bit    Registers := 5     
+	               20 Bit    Registers := 4     
+	               18 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---RAMs : 
+	               2K Bit         RAMs := 10    
++---Muxes : 
+	  29 Input     49 Bit        Muxes := 4     
+	   2 Input     49 Bit        Muxes := 2     
+	   3 Input     49 Bit        Muxes := 1     
+	  29 Input     25 Bit        Muxes := 7     
+	   2 Input     25 Bit        Muxes := 6     
+	   2 Input     20 Bit        Muxes := 7     
+	   5 Input     20 Bit        Muxes := 1     
+	 100 Input     15 Bit        Muxes := 1     
+	 100 Input     13 Bit        Muxes := 1     
+	 100 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 5     
+	  29 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	  29 Input      1 Bit        Muxes := 25    
+	   3 Input      1 Bit        Muxes := 3     
+	  30 Input      1 Bit        Muxes := 1     
+	 147 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_level 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 5     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 3     
+	   3 Input     25 Bit       Adders := 4     
+	   7 Input     25 Bit       Adders := 1     
+	   6 Input     25 Bit       Adders := 2     
+	   5 Input     25 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 2     
++---Registers : 
+	               49 Bit    Registers := 8     
+	               48 Bit    Registers := 1     
+	               25 Bit    Registers := 5     
+	               20 Bit    Registers := 4     
+	               18 Bit    Registers := 6     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	               2K Bit         RAMs := 10    
++---Muxes : 
+	  29 Input     49 Bit        Muxes := 4     
+	   2 Input     49 Bit        Muxes := 2     
+	   3 Input     49 Bit        Muxes := 1     
+	  29 Input     25 Bit        Muxes := 7     
+	   2 Input     25 Bit        Muxes := 6     
+	   2 Input     20 Bit        Muxes := 7     
+	   5 Input     20 Bit        Muxes := 1     
+	 100 Input     15 Bit        Muxes := 1     
+	 100 Input     13 Bit        Muxes := 1     
+	 100 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 5     
+	  29 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 25    
+	   3 Input      1 Bit        Muxes := 3     
+	  30 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	 147 Input      1 Bit        Muxes := 1     
+Module xvga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'dot_uni_reg[24:0]' into 'dot_uni_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:241]
+INFO: [Synth 8-4471] merging register 'dot_uni_reg[24:0]' into 'dot_uni_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:241]
+INFO: [Synth 8-4471] merging register 'dot_uni_reg[24:0]' into 'dot_uni_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:241]
+INFO: [Synth 8-4471] merging register 'dot_uni_reg[24:0]' into 'dot_uni_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:241]
+INFO: [Synth 8-4471] merging register 'mag_reg[24:0]' into 'mag_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:255]
+INFO: [Synth 8-4471] merging register 'disp_y_reg[24:0]' into 'disp_y_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:220]
+INFO: [Synth 8-4471] merging register 'disp_x_reg[24:0]' into 'disp_x_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:219]
+INFO: [Synth 8-4471] merging register 'disp_y_reg[24:0]' into 'disp_y_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:220]
+INFO: [Synth 8-4471] merging register 'disp_y_reg[24:0]' into 'disp_y_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:220]
+INFO: [Synth 8-4471] merging register 'disp_x_reg[24:0]' into 'disp_x_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:219]
+INFO: [Synth 8-4471] merging register 'disp_x_reg[24:0]' into 'disp_x_reg[24:0]' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:219]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mag_big_reg' and it is trimmed from '49' to '25' bits. [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:234]
+WARNING: [Synth 8-3936] Found unconnected internal register 'write_addr_reg' and it is trimmed from '49' to '20' bits. [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:186]
+DSP Report: Generating DSP inccol_fys1, operation Mode is: A2*B2.
+DSP Report: register inccol_fys1 is absorbed into DSP inccol_fys1.
+DSP Report: register dot_uni_reg is absorbed into DSP inccol_fys1.
+DSP Report: operator inccol_fys1 is absorbed into DSP inccol_fys1.
+DSP Report: operator inccol_fys1 is absorbed into DSP inccol_fys1.
+DSP Report: Generating DSP inccol_fys1, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register disp_y_reg is absorbed into DSP inccol_fys1.
+DSP Report: register dot_uni_reg is absorbed into DSP inccol_fys1.
+DSP Report: operator inccol_fys1 is absorbed into DSP inccol_fys1.
+DSP Report: operator inccol_fys1 is absorbed into DSP inccol_fys1.
+DSP Report: Generating DSP inccol_fxs1, operation Mode is: A2*B2.
+DSP Report: register inccol_fxs1 is absorbed into DSP inccol_fxs1.
+DSP Report: register dot_uni_reg is absorbed into DSP inccol_fxs1.
+DSP Report: operator inccol_fxs1 is absorbed into DSP inccol_fxs1.
+DSP Report: operator inccol_fxs1 is absorbed into DSP inccol_fxs1.
+DSP Report: Generating DSP inccol_fxs1, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register disp_x_reg is absorbed into DSP inccol_fxs1.
+DSP Report: register dot_uni_reg is absorbed into DSP inccol_fxs1.
+DSP Report: operator inccol_fxs1 is absorbed into DSP inccol_fxs1.
+DSP Report: operator inccol_fxs1 is absorbed into DSP inccol_fxs1.
+DSP Report: Generating DSP mag_big1, operation Mode is: (D-A)*B2.
+DSP Report: register mag_big1 is absorbed into DSP mag_big1.
+DSP Report: register disp_y_reg is absorbed into DSP mag_big1.
+DSP Report: operator mag_big1 is absorbed into DSP mag_big1.
+DSP Report: operator mag_big1 is absorbed into DSP mag_big1.
+DSP Report: operator disp_y0 is absorbed into DSP mag_big1.
+DSP Report: Generating DSP mag_big1, operation Mode is: (PCIN>>17)+(D-A)*B2.
+DSP Report: register disp_y_reg is absorbed into DSP mag_big1.
+DSP Report: register disp_y_reg is absorbed into DSP mag_big1.
+DSP Report: operator mag_big1 is absorbed into DSP mag_big1.
+DSP Report: operator mag_big1 is absorbed into DSP mag_big1.
+DSP Report: operator disp_y0 is absorbed into DSP mag_big1.
+DSP Report: Generating DSP mag_big1, operation Mode is: (D-A)*B2.
+DSP Report: register mag_big1 is absorbed into DSP mag_big1.
+DSP Report: register disp_x_reg is absorbed into DSP mag_big1.
+DSP Report: operator mag_big1 is absorbed into DSP mag_big1.
+DSP Report: operator mag_big1 is absorbed into DSP mag_big1.
+DSP Report: operator disp_x0 is absorbed into DSP mag_big1.
+DSP Report: Generating DSP mag_big1, operation Mode is: (PCIN>>17)+(D-A)*B2.
+DSP Report: register disp_x_reg is absorbed into DSP mag_big1.
+DSP Report: register disp_x_reg is absorbed into DSP mag_big1.
+DSP Report: operator mag_big1 is absorbed into DSP mag_big1.
+DSP Report: operator mag_big1 is absorbed into DSP mag_big1.
+DSP Report: operator disp_x0 is absorbed into DSP mag_big1.
+DSP Report: Generating DSP dot_big1, operation Mode is: (D-A)*B2.
+DSP Report: register dot_big1 is absorbed into DSP dot_big1.
+DSP Report: register disp_y_reg is absorbed into DSP dot_big1.
+DSP Report: operator disp_y0 is absorbed into DSP dot_big1.
+DSP Report: operator dot_big1 is absorbed into DSP dot_big1.
+DSP Report: operator dot_big1 is absorbed into DSP dot_big1.
+DSP Report: Generating DSP dot_big1, operation Mode is: (PCIN>>17)+(D-A)*B2.
+DSP Report: register visp_y_reg is absorbed into DSP dot_big1.
+DSP Report: register disp_y_reg is absorbed into DSP dot_big1.
+DSP Report: operator disp_y0 is absorbed into DSP dot_big1.
+DSP Report: operator dot_big1 is absorbed into DSP dot_big1.
+DSP Report: operator dot_big1 is absorbed into DSP dot_big1.
+DSP Report: Generating DSP dot_big1, operation Mode is: (D-A)*B2.
+DSP Report: register dot_big1 is absorbed into DSP dot_big1.
+DSP Report: register disp_x_reg is absorbed into DSP dot_big1.
+DSP Report: operator disp_x0 is absorbed into DSP dot_big1.
+DSP Report: operator dot_big1 is absorbed into DSP dot_big1.
+DSP Report: operator dot_big1 is absorbed into DSP dot_big1.
+DSP Report: Generating DSP dot_big1, operation Mode is: (PCIN>>17)+(D-A)*B2.
+DSP Report: register visp_x_reg is absorbed into DSP dot_big1.
+DSP Report: register disp_x_reg is absorbed into DSP dot_big1.
+DSP Report: operator disp_x0 is absorbed into DSP dot_big1.
+DSP Report: operator dot_big1 is absorbed into DSP dot_big1.
+DSP Report: operator dot_big1 is absorbed into DSP dot_big1.
+DSP Report: Generating DSP div_check0, operation Mode is: A''*B.
+DSP Report: register mag_big_reg is absorbed into DSP div_check0.
+DSP Report: register mag_reg is absorbed into DSP div_check0.
+DSP Report: operator div_check0 is absorbed into DSP div_check0.
+DSP Report: operator div_check0 is absorbed into DSP div_check0.
+DSP Report: Generating DSP div_check_reg, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register mag_big_reg is absorbed into DSP div_check_reg.
+DSP Report: register mag_reg is absorbed into DSP div_check_reg.
+DSP Report: register div_check_reg is absorbed into DSP div_check_reg.
+DSP Report: operator div_check0 is absorbed into DSP div_check_reg.
+DSP Report: operator div_check0 is absorbed into DSP div_check_reg.
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[15]__0' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[24]__0' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[2]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[3]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[4]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[5]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[6]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[7]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[8]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[9]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[10]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[11]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[12]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[13]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[14]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[15]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[16]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[17]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[18]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[19]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[20]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[21]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[22]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[23]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[16]__0' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[17]__0' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[18]__0' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[19]__0' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[20]__0' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[21]__0' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[22]__0' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[23]__0' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[24]' (FDE) to 'frictiony_reg[2]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[0]__0' (FDE) to 'frictiony_reg[0]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[0]' (FDE) to 'frictiony_reg[0]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[0]' (FDE) to 'frictiony_reg[0]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[1]' (FDE) to 'frictionx_reg[1]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[2]__0' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[24]__0' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[2]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[3]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[4]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[5]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[6]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[7]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[8]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[9]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[10]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[11]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[12]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[13]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[14]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[15]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[16]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[17]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[18]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[19]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[20]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[21]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[22]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[23]' (FDE) to 'frictionx_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[3]__0' (FDE) to 'frictionx_reg[4]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[4]__0' (FDE) to 'frictionx_reg[5]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[5]__0' (FDE) to 'frictionx_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[6]__0' (FDE) to 'frictionx_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[7]__0' (FDE) to 'frictionx_reg[8]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[8]__0' (FDE) to 'frictionx_reg[9]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[9]__0' (FDE) to 'frictionx_reg[10]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[10]__0' (FDE) to 'frictionx_reg[11]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[11]__0' (FDE) to 'frictionx_reg[12]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[12]__0' (FDE) to 'frictionx_reg[13]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[13]__0' (FDE) to 'frictionx_reg[14]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[14]__0' (FDE) to 'frictionx_reg[15]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[15]__0' (FDE) to 'frictionx_reg[16]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[16]__0' (FDE) to 'frictionx_reg[17]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[17]__0' (FDE) to 'frictionx_reg[18]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[18]__0' (FDE) to 'frictionx_reg[19]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[19]__0' (FDE) to 'frictionx_reg[20]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[20]__0' (FDE) to 'frictionx_reg[21]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[21]__0' (FDE) to 'frictionx_reg[22]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[22]__0' (FDE) to 'frictionx_reg[23]__0'
+INFO: [Synth 8-3886] merging instance 'frictionx_reg[23]__0' (FDE) to 'frictionx_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\frictiony_reg[0]__0 )
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[1]' (FDE) to 'frictiony_reg[1]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[2]__0' (FDE) to 'frictiony_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[3]__0' (FDE) to 'frictiony_reg[4]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[4]__0' (FDE) to 'frictiony_reg[5]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[5]__0' (FDE) to 'frictiony_reg[6]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[6]__0' (FDE) to 'frictiony_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[7]__0' (FDE) to 'frictiony_reg[8]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[8]__0' (FDE) to 'frictiony_reg[9]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[9]__0' (FDE) to 'frictiony_reg[10]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[10]__0' (FDE) to 'frictiony_reg[11]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[11]__0' (FDE) to 'frictiony_reg[12]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[12]__0' (FDE) to 'frictiony_reg[13]__0'
+INFO: [Synth 8-3886] merging instance 'frictiony_reg[13]__0' (FDE) to 'frictiony_reg[14]__0'
+INFO: [Synth 8-3886] merging instance 'rgb_reg[4]' (FDR) to 'rgb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb_reg[5]' (FDR) to 'rgb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb_reg[6]' (FDR) to 'rgb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb_reg[7]' (FDR) to 'rgb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'rgb_reg[0]' (FDR) to 'rgb_reg[1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[47]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[46]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[45]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[44]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[43]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[42]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[41]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[40]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[39]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[38]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[37]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[36]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[35]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[34]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[33]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[32]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[31]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[30]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[29]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[28]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[27]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[26]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[25]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[24]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[23]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[22]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[21]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[20]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[19]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[18]) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (div_check_reg[17]) is unused and will be removed from module top_level.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1028.273 ; gain = 439.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+---------------+-----------+----------------------+--------------------------------------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives                                 | 
++------------+---------------+-----------+----------------------+--------------------------------------------+
+|top_level   | wall_colx_reg | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | wall_fxs_reg  | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | col_fxs_reg   | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | xvs_reg       | Implied   | 128 x 25             | RAM16X1D x 25	RAM32X1D x 25	RAM64X1D x 25	 | 
+|top_level   | xps_reg       | Implied   | 128 x 25             | RAM16X1D x 25	RAM32X1D x 25	RAM64X1D x 25	 | 
+|top_level   | wall_coly_reg | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | wall_fys_reg  | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | col_fys_reg   | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | yvs_reg       | Implied   | 128 x 25             | RAM16X1D x 25	RAM32X1D x 25	RAM64X1D x 25	 | 
+|top_level   | yps_reg       | Implied   | 128 x 25             | RAM16X1D x 25	RAM32X1D x 25	RAM64X1D x 25	 | 
++------------+---------------+-----------+----------------------+--------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|top_level   | A2*B2               | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|top_level   | (PCIN>>17)+A2*B2    | 25     | 8      | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|top_level   | A2*B2               | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|top_level   | (PCIN>>17)+A2*B2    | 25     | 8      | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|top_level   | (D-A)*B2            | 25     | 18     | -      | 25     | 48     | 0    | 1    | -    | 0    | 1     | 0    | 0    | 
+|top_level   | (PCIN>>17)+(D-A)*B2 | 25     | 8      | -      | 25     | 32     | 0    | 1    | -    | 0    | 1     | 0    | 0    | 
+|top_level   | (D-A)*B2            | 25     | 18     | -      | 25     | 48     | 0    | 1    | -    | 0    | 1     | 0    | 0    | 
+|top_level   | (PCIN>>17)+(D-A)*B2 | 25     | 8      | -      | 25     | 32     | 0    | 1    | -    | 0    | 1     | 0    | 0    | 
+|top_level   | (D-A)*B2            | 25     | 18     | -      | 25     | 48     | 0    | 1    | -    | 0    | 1     | 0    | 0    | 
+|top_level   | (PCIN>>17)+(D-A)*B2 | 25     | 8      | -      | 25     | 32     | 0    | 1    | -    | 0    | 1     | 0    | 0    | 
+|top_level   | (D-A)*B2            | 25     | 18     | -      | 25     | 48     | 0    | 1    | -    | 0    | 1     | 0    | 0    | 
+|top_level   | (PCIN>>17)+(D-A)*B2 | 25     | 8      | -      | 25     | 32     | 0    | 1    | -    | 0    | 1     | 0    | 0    | 
+|top_level   | A''*B               | 25     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|top_level   | (PCIN>>17)+A''*B    | 25     | 9      | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 1    | 
++------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1049.699 ; gain = 460.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1157.211 ; gain = 568.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+---------------+-----------+----------------------+--------------------------------------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives                                 | 
++------------+---------------+-----------+----------------------+--------------------------------------------+
+|top_level   | wall_colx_reg | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | wall_fxs_reg  | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | col_fxs_reg   | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | xvs_reg       | Implied   | 128 x 25             | RAM16X1D x 25	RAM32X1D x 25	RAM64X1D x 25	 | 
+|top_level   | xps_reg       | Implied   | 128 x 25             | RAM16X1D x 25	RAM32X1D x 25	RAM64X1D x 25	 | 
+|top_level   | wall_coly_reg | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | wall_fys_reg  | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | col_fys_reg   | Implied   | 128 x 25             | RAM16X1S x 25	RAM32X1S x 25	RAM64X1S x 25	 | 
+|top_level   | yvs_reg       | Implied   | 128 x 25             | RAM16X1D x 25	RAM32X1D x 25	RAM64X1D x 25	 | 
+|top_level   | yps_reg       | Implied   | 128 x 25             | RAM16X1D x 25	RAM32X1D x 25	RAM64X1D x 25	 | 
++------------+---------------+-----------+----------------------+--------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1158.262 ; gain = 569.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1158.262 ; gain = 569.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1158.262 ; gain = 569.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1158.262 ; gain = 569.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1158.262 ; gain = 569.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1158.262 ; gain = 569.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1158.262 ; gain = 569.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |frame_blk_mem    |         2|
+|2     |clk_wiz_65       |         1|
+|3     |fifo_generator_0 |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |clk_wiz_65       |     1|
+|2     |fifo_generator_0 |     1|
+|3     |frame_blk_mem    |     1|
+|4     |frame_blk_mem__2 |     1|
+|5     |CARRY4           |   238|
+|6     |DSP48E1          |     4|
+|7     |DSP48E1_1        |     8|
+|8     |DSP48E1_2        |     1|
+|9     |DSP48E1_3        |     1|
+|10    |LUT1             |    74|
+|11    |LUT2             |   716|
+|12    |LUT3             |   228|
+|13    |LUT4             |   187|
+|14    |LUT5             |   123|
+|15    |LUT6             |   574|
+|16    |MUXF7            |     1|
+|17    |RAM16X1D         |   100|
+|18    |RAM16X1S         |   104|
+|19    |RAM32X1D         |   100|
+|20    |RAM32X1S         |   104|
+|21    |RAM64X1D         |   100|
+|22    |RAM64X1S         |   104|
+|23    |FDRE             |   447|
+|24    |IBUF             |    17|
+|25    |OBUF             |    30|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |  3269|
+|2     |  db1    |debouncer   |    94|
+|3     |  db2    |debouncer_0 |    39|
+|4     |  xvga1  |xvga        |    73|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1158.262 ; gain = 569.129
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 1158.262 ; gain = 440.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1158.262 ; gain = 569.129
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1170.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 865 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top_level' is not ideal for floorplanning, since the cellview 'top_level' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1170.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 612 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 100 instances
+  RAM16X1S => RAM32X1S (RAMS32): 104 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 100 instances
+  RAM32X1S => RAM32X1S (RAMS32): 104 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 100 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 104 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+146 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1170.043 ; gain = 872.090
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1170.043 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.runs/synth_1/top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 11 01:17:51 2021...

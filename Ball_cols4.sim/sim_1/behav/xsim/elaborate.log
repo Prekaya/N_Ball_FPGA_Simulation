@@ -1,0 +1,58 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 3da21455af0f4a55a6fc54185040ecb8 --incr --debug typical --relax --mt 2 -L fifo_generator_v13_2_5 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_level_tb_behav xil_defaultlib.top_level_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 49 differs from formal bit length 20 for port 'addra' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:124]
+WARNING: [VRFC 10-3091] actual bit length 49 differs from formal bit length 20 for port 'addrb' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:125]
+WARNING: [VRFC 10-3091] actual bit length 49 differs from formal bit length 20 for port 'addra' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:127]
+WARNING: [VRFC 10-3091] actual bit length 49 differs from formal bit length 20 for port 'addrb' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:128]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [C:/Users/Nana/6111Projects/Ball_cols4/Ball_cols4.srcs/sources_1/new/top_level.sv:137]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_5.fifo_generator_v13_2_5_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.frame_blk_mem
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=50.37...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_65_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_65
+Compiling module xil_defaultlib.xvga
+Compiling module xil_defaultlib.debouncer
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.reset_builtin [\reset_builtin(c_common_clock=0,...]
+Compiling architecture ff18_internal_vhdl_v of entity unisim.FF18_INTERNAL_VHDL [\FF18_INTERNAL_VHDL(almost_full_...]
+Compiling architecture fifo18e1_v of entity unisim.FIFO18E1 [\FIFO18E1(almost_full_offset="00...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_prim_v6 [\builtin_prim_v6(c_family="7SERI...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_extdepth_v6 [\builtin_extdepth_v6(c_family="7...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.builtin_top_v6 [\builtin_top_v6(c_family="7SERIE...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.input_blk [\input_blk(c_common_clock=0,c_di...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.output_blk [\output_blk(c_dout_width=1,c_pkt...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_builtin [\fifo_generator_v13_2_5_builtin(...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture xilinx of entity fifo_generator_v13_2_5.fifo_generator_v13_2_5_synth [\fifo_generator_v13_2_5_synth(c_...]
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling module xil_defaultlib.top_level_default
+Compiling module xil_defaultlib.top_level_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_level_tb_behav

@@ -1,0 +1,22 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__0/SP/ADR1|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__6/SP/ADR1|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__1/SP/ADR1|
+|              sys_clk_pin |              sys_clk_pin |                                                                              col_fxs_reg_0_15_0_0/SP/ADR0|
+|              sys_clk_pin |              sys_clk_pin |                                                                              col_fxs_reg_0_15_0_0/SP/ADR1|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__0/SP/ADR0|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__0/SP/ADR2|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__7/SP/ADR1|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__6/SP/ADR0|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__0/SP/ADR3|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__5/SP/ADR0|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__1/SP/ADR0|
+|              sys_clk_pin |              sys_clk_pin |                                                                              col_fxs_reg_0_15_0_0/SP/ADR2|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__5/SP/ADR1|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__1/SP/ADR2|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__2/SP/ADR0|
+|              sys_clk_pin |              sys_clk_pin |                                                                           col_fxs_reg_0_15_0_0__6/SP/ADR3|
+|              sys_clk_pin |              sys_clk_pin |                                                                              col_fxs_reg_0_15_0_0/SP/ADR3|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

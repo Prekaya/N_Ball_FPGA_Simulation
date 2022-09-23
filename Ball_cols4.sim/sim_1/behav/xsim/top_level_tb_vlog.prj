@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65" \
+"../../../../Ball_cols4.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65/clk_wiz_65_clk_wiz.v" \
+"../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65/clk_wiz_65.v" \
+"../../../../Ball_cols4.srcs/sources_1/ip/frame_blk_mem/sim/frame_blk_mem.v" \
+
+sv xil_defaultlib  --include "../../../../Ball_cols4.srcs/sources_1/ip/clk_wiz_65" \
+"../../../../Ball_cols4.srcs/sources_1/new/debouncer.sv" \
+"../../../../Ball_cols4.srcs/sources_1/new/top_level.sv" \
+"../../../../Ball_cols4.srcs/sources_1/new/xvga.sv" \
+"../../../../Ball_cols4.srcs/sim_1/new/top_level_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
